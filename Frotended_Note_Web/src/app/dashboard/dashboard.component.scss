@@ -1,0 +1,28 @@
+.background-container {
+  background-image: url('https://img.freepik.com/free-photo/sheet-paper-pen-with-blue-background_53876-41374.jpg?size=626&ext=jpg&ga=GA1.2.368269146.1695010732&semt=ais'); /* Replace with your image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.task-card {
+    margin: 10px;
+    width: 300px; 
+    min-width: 300px; 
+    max-width: 300px;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    background-color: #bdcebe;
+    color:  #563f46;
+  }
+  
+  .card-content {
+    overflow: auto; 
+  }
+  

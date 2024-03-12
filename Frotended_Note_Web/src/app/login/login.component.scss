@@ -1,0 +1,80 @@
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-image: url('https://img.freepik.com/free-photo/blank-checked-paper-notes-grey_114579-28801.jpg?size=626&ext=jpg&ga=GA1.1.368269146.1695010732&semt=ais');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Card styles */
+mat-card {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease; /* Add a smooth transformation on hover */
+
+    @media screen and (max-width: 500px) {
+        max-width: 90%;
+    }
+
+    &:hover {
+        transform: scale(1.02);
+    }
+}
+
+/* Card title styles */
+mat-card-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff; /* Update title color */
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form field styles */
+mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Button styles */
+button {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+        background-color: rosybrown;
+        transform: translateY(-2px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    mat-card-title {
+        font-size: 20px;
+    }
+
+    mat-form-field {
+        margin-bottom: 10px;
+    }
+}

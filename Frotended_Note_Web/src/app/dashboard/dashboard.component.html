@@ -1,0 +1,18 @@
+<div class="background-container">
+  <div fxLayout="row wrap" fxLayoutGap="16px">
+    <mat-card *ngFor="let task of taskData" class="task-card" fxFlex.gt-sm="calc(31%)" fxFlex.lt-md="calc(50% - 16px)" fxFlex.xs="calc(100% - 16px)">
+      <mat-card-header>
+        <mat-card-title>{{ task.title }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="card-content">
+        <p>{{ task.description }}</p>
+        <p>Created Date: {{ task.createdDate | date }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div style="text-align: center; margin-top: 20px;" *ngIf="taskData?.length == 0">
+    <p>You Don't have any Notes.</p>
+    <button mat-raised-button color="primary" routerLink="/create-notes">Create Notes</button>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    background-color: #2b344c; 
+    transition: background-color 0.3s ease; 
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 16px;
+    color: #acbacf; 
+}
+
+.spacer {
+    flex: 1;
+}
+
+button {
+    color: white;
+    text-transform: uppercase;
+    margin-left: 8px;
+    background-color:#9400e7; 
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+button.active {
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #d63031; 
+}
+/* Add focus styles for buttons */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); 
+}
+}

@@ -1,0 +1,18 @@
+<div *ngIf="!isUserLoggedIn">
+  <mat-toolbar color="primary" class="navbar">
+      <span class="navbar-brand">NOTESAPP</span>
+      <span class="spacer"></span>
+      <button mat-button routerLink="/register" routerLinkActive="active">Register</button>
+      <button mat-button routerLink="/login" routerLinkActive="active">Login</button>
+  </mat-toolbar>
+</div>
+<div *ngIf="isUserLoggedIn">
+  <mat-toolbar color="primary" class="navbar">
+      <span class="navbar-brand">NOTESAPP</span>
+      <span class="spacer"></span>
+      <button mat-button routerLink="/dashboard" routerLinkActive="active">Dashboard</button>
+       <button mat-button routerLink="/create-notes" routerLinkActive="active">Create Notes</button>
+      <button mat-button routerLinkActive="active" (click)="logout()">Logout</button>
+  </mat-toolbar>
+</div>
+<router-outlet></router-outlet>

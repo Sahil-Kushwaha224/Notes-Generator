@@ -1,0 +1,70 @@
+// Define a background image for the container
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-photo/blank-checked-paper-notes-grey_114579-28801.jpg?size=626&ext=jpg&ga=GA1.1.368269146.1695010732&semt=ais'); /* Replace with the path to your background image */
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Set text color to white for better readability on the background image */
+    font-family: Arial, sans-serif; /* Specify a font family */
+}
+
+mat-card {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Add a semi-transparent white background to the card */
+    border-radius: 10px; /* Add rounded corners to the card */
+
+    @media screen and (max-width: 500px) {
+        max-width: 90%;
+    }
+}
+
+mat-card-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+mat-form-field {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    background-color: #007bff; 
+    color: #fff;
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: rosybrown; 
+}
+
+@media screen and (max-width: 500px) {
+    mat-card-title {
+        font-size: 20px;
+    }
+
+    mat-form-field {
+        margin-bottom: 10px;
+    }
+}
+
+.error-snackbar {
+    background-color: #f44336 !important;
+}
